@@ -8,6 +8,7 @@ import React, {
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { useContacts } from "../contexts/ContactsProvider";
 import { useSocket } from "./SocketProvider";
+import { arrayEquality } from "./HelperFunctions";
 
 const ConversationContext = createContext();
 
@@ -118,14 +119,3 @@ function ConversationsProvider({ children, id }) {
 }
 
 export default ConversationsProvider;
-
-function arrayEquality(a, b) {
-  if (a.length !== b.length) return false;
-
-  a.sort();
-  b.sort();
-
-  return a.every((element, index) => {
-    return element === b[index];
-  });
-}
