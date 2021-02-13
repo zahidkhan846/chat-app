@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import logo from "../../images/logo512.png";
+import { RiChatVoiceFill } from "react-icons/ri";
 
 function Header() {
   return (
@@ -12,7 +12,9 @@ function Header() {
         borderBottom: "2px solid #d3c614",
       }}
     >
-      <img src={logo} style={{ height: "50px", padding: "5px 0" }} alt="CWZ" />
+      <h1 style={{ color: "coral", cursor: "default" }}>
+        <span style={{ fontSize: "30px" }}>Chat App</span> <RiChatVoiceFill />
+      </h1>
     </Container>
   );
 }

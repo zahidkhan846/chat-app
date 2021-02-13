@@ -49,12 +49,9 @@
 .footer-content .social a {
   margin-right: 1rem;
 }
-.footer-content p {
-  color: lightblue;
-}
 
 .footer-content p a {
-  color: var(--primary-color);
+  color: #fff;
   margin-left: 0.5rem;
   transition: all 0.3s;
 }
